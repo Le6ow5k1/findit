@@ -233,7 +233,6 @@ end
 
 Extends finder with cache possibility. Every call of `call` method will be cached in `Rails.cache`.
 Method `cache options` allows you to add custom options like `expire_in` or `tags` to `Rails.cache.fetch`.
-If you want to disable cache dependent of initialization arguments, you can use `cache?` DSL method.
 
 All in one Example:
 ```ruby
