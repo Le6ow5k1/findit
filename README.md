@@ -55,7 +55,7 @@ class SomeFinder
 end
 ```
 
-And that it! Now you can iterate over finder results by simple `each`:
+And that's it! Now you can iterate over finder results by simple `each`:
 ```ruby
 @scope = SomeFinder.new(params)
 @scope.each do |d|
@@ -122,7 +122,7 @@ Result can be accessed with `each`, `[]` and `size` methods, but to make things 
 
 ```
 
-For easier caching expirience we provide DSL to define you custom `cache_key`
+For easier caching experience we provide DSL to define you custom `cache_key`
 
 ```ruby
 #/app/finders/posts_finders.rb
@@ -261,7 +261,7 @@ class CachedPostsFinder
 end
 ```
 
-To disable cache for some reasone you can call special method without_cache:
+To disable cache for some reason you can call special method without_cache:
 
 ```ruby
 CachedFinder.new(user).without_cache.load # no cache
